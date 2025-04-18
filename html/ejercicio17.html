@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 17</title>
+    <script>
+        function contarLetraA(cadena) {
+            let contador = 0;
+            for (let letra of cadena.toLowerCase()) {
+                if (letra === 'a') {
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+        let texto = prompt("Ingresá un texto:");
+        let cantidad = contarLetraA(texto);
+        alert(`La letra "a" aparece ${cantidad} veces en el texto ingresado.`);
+    </script>
+</head>
+<body>
+    <h2>Ejercicio 17</h2>
+    <p>Este script cuenta cuántas veces aparece la letra "a" en un texto ingresado por el usuario.</p>
+</body>
+</html>

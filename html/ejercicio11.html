@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 11</title>
+    <script>
+        const calcularConsumo = (kilometros, litros) => {
+            if (kilometros <= 0 || litros <= 0) {
+                alert("Por favor, ingresá valores mayores a 0.");
+                return;
+            }
+            const consumo = (litros / kilometros).toFixed(2);
+            alert(`El consumo de combustible por kilómetro es: ${consumo} litros/km.`);
+        };
+
+        const kilometros = parseFloat(prompt("Ingresá el número de kilómetros recorridos:"));
+        const litros = parseFloat(prompt("Ingresá el número de litros de combustible consumidos:"));
+
+        if (isNaN(kilometros) || isNaN(litros)) {
+            alert("Por favor, ingresá valores numéricos válidos.");
+        } else {
+            calcularConsumo(kilometros, litros);
+        }
+    </script>
+</head>
+<body>
+    <h2>Ejercicio 11</h2>
+    <p>Este script calcula el consumo de combustible por kilómetro según los datos ingresados por el usuario.</p>
+</body>
+</html>

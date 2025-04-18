@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <script>
+        const duplicar = arreglo => arreglo.map(num => num * 2);
+
+        function mostrarDuplicados() {
+            const original = [1, 2, 3, 4, 5];
+            const duplicados = duplicar(original);
+            document.getElementById('output').innerHTML = `
+                <p>Original: ${original}</p>
+                <p>Duplicados: ${duplicados}</p>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 14</h1>
+    <button onclick="mostrarDuplicados()">Duplicar Arreglo</button>
+    <div id="output"></div>
+</body>
+</html>
