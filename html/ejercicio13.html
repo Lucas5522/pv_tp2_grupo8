@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <script>
+        const mostrarArreglo = arreglo => {
+            let contenido = '';
+            for (let i = 0; i < arreglo.length; i++) {
+                contenido += `<p>${arreglo[i]}</p>`;
+            }
+            document.getElementById('output').innerHTML = contenido;
+        };
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 13</h1>
+    <button onclick="mostrarArreglo([1, 2, 3, 4, 5])">Mostrar Arreglo</button>
+    <div id="output"></div>
+</body>
+</html>
