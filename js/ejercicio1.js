@@ -1,3 +1,2 @@
-let nombre = "Lucas";
-let apellido = "Montes";
-console.log("Somos: " + nombre   + " " + apellido + " y estamos aprendiendo javascript");
+const integrantes = "Mauro Nahuel Gutierrez Nanda"; 
+console.log("Este grupo esta conformado por " +integrantes+ " y estoy aprendiendo JavaScript.");
