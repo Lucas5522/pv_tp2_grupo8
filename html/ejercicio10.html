@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10</title>
+    <script>
+        function Promedio(numero1, numero2, numero3) {
+            let suma = numero1 + numero2 + numero3;
+            let promedio = (suma / 3).toFixed(2);
+            alert("El promedio de los números es: " + promedio);
+        }
+        let numero1 = parseInt(prompt("Ingresá el primer número:"));
+        let numero2 = parseInt(prompt("Ingresá el segundo número:"));
+        let numero3 = parseInt(prompt("Ingresá el tercer número:"));
+        Promedio(numero1, numero2, numero3);
+    </script>
+</head>
+<body>
+    <h2>Ejercicio 10</h2>
+    <p>Este script determina el promedio entre 3 números ingresados por el ususario.</p>
+</body>
+</html>
